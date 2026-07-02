@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Champions — Football Tournament Hub</title>
+  <meta name="description" content="The current World Champions and the full timeline of previous tournament winners.">
+  <meta name="theme-color" content="#08090b">
+  <link rel="canonical" href="champions.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23d4af37'/%3E%3Ctext x='50' y='66' font-size='44' text-anchor='middle' font-family='Arial' fill='%2308090b'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="Football Tournament Hub — Home">
+        <span class="brand-mark" data-bind="site.logoInitials">FTH</span>
+        <span class="brand-name">Tournament <span data-bind="site.shortName">Hub</span></span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="points-table.html">Points Table</a>
+        <a href="teams.html">Teams</a>
+        <a href="champions.html">Champions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div style="display:flex; align-items:center; gap:1rem;">
+        <a href="schedule.html" class="btn btn--gold btn--sm nav-cta">View Schedule</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg class="icon icon-menu"><use href="assets/svg/icons.svg#icon-menu"></use></svg>
+          <svg class="icon icon-close"><use href="assets/svg/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero container">
+      <p class="eyebrow" style="justify-content:center">Hall Of Fame</p>
+      <h1>World Champions</h1>
+      <p>Celebrating the reigning champions and every nation to have lifted the trophy before them.</p>
+    </div>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="glass-card champion-panel" id="current-champion"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">A Storied Legacy</p>
+            <h2>Previous Champions</h2>
+            <p class="lede">Scroll through every winning nation, from the modern era back through tournament history.</p>
+          </div>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-track" id="champions-timeline"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="grid footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-mark" data-bind="site.logoInitials">FTH</span>
+            <span class="brand-name">Tournament <span data-bind="site.shortName">Hub</span></span>
+          </a>
+          <p data-bind="site.tagline">The Official Home of the World's Greatest Football Tournaments</p>
+          <div class="social-row" id="social-links"></div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="points-table.html">Points Table</a></li>
+            <li><a href="teams.html">Teams</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Tournament</h4>
+          <ul>
+            <li><a href="champions.html">Champions</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#next">Next Tournament</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Registration</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="js-year">2026</span> <span data-bind="site.name">Football Tournament Hub</span>. All rights reserved.</span>
+        <span>Built for fans, by fans. Not affiliated with FIFA or UEFA.</span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="to-top" aria-label="Back to top">
+    <svg class="icon"><use href="assets/svg/icons.svg#icon-arrow"></use></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
